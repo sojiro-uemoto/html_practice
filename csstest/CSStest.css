@@ -1,0 +1,48 @@
+.a1{
+    line-height: 3;
+    text-align:center;
+    transition: 1.5s;
+   }
+.a1:hover
+   {
+    transform: scaleX(3);
+   }
+  
+
+.s1{
+    color: red;
+    transition: 1.5s;
+   }
+.s1:hover
+   {
+    display: inline-block;
+    animation: hurueru .3s  infinite;
+    color: blue;
+    font-size: 40px;
+   }
+
+@keyframes hurueru 
+{
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+.m{animation-name: move;
+   animation-duration: 2s; 
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;}
+@keyframes move 
+{
+  0% {transform: translate(0px, 100px) rotateZ(0deg)}
+  25% {transform: translate(400px, 100px) rotateZ(45deg)}
+  50% {transform: translate(800px, 100px) rotateZ(0deg)}
+  75% {transform: translate(400px, 100px) rotateZ(-45deg)}
+  100% {transform: translate(0px, 100px) rotateZ(0deg)}
+}
+
+html {
+      background-color: #b5cee5;
+     }
